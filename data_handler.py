@@ -32,15 +32,15 @@ def cargar_datos(nombre_archivo):
                 print(f"Error: fila con formato incorrecto -> {row}")
                 continue  # Saltar la fila y continuar con la siguiente
 
-            # Extraer solo las columnas necesarias
-            game_id = row[3]  # Columna D
-            teams = row[4]    # Columna E
-            yards = row[5]    # Columna F
-            qtr = row[6]      # Columna G
-            date = row[7]     # Columna H
-            time = row[8]     # Columna I
+            # Se extrae solo columnas necesarias
+            game_id = row[3] 
+            teams = row[4]    
+            yards = row[5]    
+            qtr = row[6]      
+            date = row[7]     
+            time = row[8]     
 
-            # Crear objeto PuntPlay y almacenar en el archivo hash
+           
             punt_play = PuntPlay(game_id, teams, yards, int(qtr), date, time)
             almacenar_registro(punt_play)
 

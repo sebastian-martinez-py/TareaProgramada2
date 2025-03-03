@@ -4,10 +4,6 @@ def hash_function(fecha: str, cuarto: int, equipo: str) -> int:
     return (date_value + cuarto + team_value) % 750
 
 
- #
-   #Función hash personalizada basada en los datos de la jugada.
-    # Convierte la fecha en un número.
-   #- Usa el cuarto del partido.
-    # Suma los valores ASCII del nombre del equipo.
-   #- Aplica una operación modular para ajustarlo a 750 registros.
-#
+#Se utiliza un Hash basico de suma de caracteres para facilitar la aplicacion de la misma, aplica una operacion modular par ajusatrlo a 750 registros,
+#Usa el cuarto del partido y Suma los valores ASCII del nombre del equipo.
+
